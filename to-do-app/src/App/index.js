@@ -1,45 +1,56 @@
-import './App.css';
-import Button from '../Button';
-import Header from '../Header';
-import Input from '../Input';
-import List from '../List';
-import {useState} from 'react'
+import "./App.css";
+import Button from "../Button";
 
-
+import Input from "../Input";
+import List from "../List";
+import { useState } from "react";
 
 function App() {
-
-  const [input, setInput] = useState("")
-  const [list, setList] = useState([])
+  const [input, setInput] = useState("");
+  const [list, setList] = useState([]);
 
   function getListItem(e) {
-    const newInput = e.target.value
-    setInput(newInput)
+    const newInput = e.target.value;
+    setInput(newInput);
   }
 
   function addToList() {
-    setList([input, ...list])
-
+    setList([input, ...list]);
   }
   function clearList() {
-    setList([])
-   
+    setList([]);
   }
-
-
 
   return (
     <div className="App">
-    <Header text="To-Do List"/>
-    <br/>
-    <Input onChange={getListItem}/>
-    <Button handleClick={addToList} text="Submit"/>
-    <List listItem={list}/>
-    <Button handleClick={clearList} text="Delete All"/>
+      <div className="App-header">
+        <h1 className="header"> To-Do List </h1>
+      </div>
+      <br />
+      <div className="submit-form">
+        <div className="submit-input">
+          <Input className="input" onChange={getListItem} />
+        </div>
+        <div className="submit-button-div">
+          <Button
+            className="submit-button"
+            handleClick={addToList}
+            text="Submit"
+          />
+        </div>
+      </div>
+      <div className="rendered-list">
+        <div className="list-item">
+          <List listItem={list} />
+        </div>
+        <Button
+          className="delete-button"
+          handleClick={clearList}
+          text="Delete All"
+        />
+      </div>
     </div>
   );
 }
 
 export default App;
-
- 

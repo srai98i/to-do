@@ -1,0 +1,27 @@
+.list-line {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 5rem;
+}
+
+.checkbox {
+    /* background-color: aquamarine; */
+   height:1.5rem
+}
+
+.list {
+    /* background-color: azure; */
+}
+
+.tick {
+    /* background-color: blueviolet; */
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+.task {
+    /* background-color: blue; */
+}
