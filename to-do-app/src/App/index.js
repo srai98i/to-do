@@ -11,6 +11,7 @@ function App() {
 
   function getListItem(e) {
     const newInput = e.target.value;
+
     setInput(newInput);
   }
 

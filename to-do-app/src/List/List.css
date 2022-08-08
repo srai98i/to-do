@@ -1,27 +1,227 @@
 .list-line {
-    /* background-color: brown; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 5rem;
+  /* background-color: brown; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(0, 1fr);
+  align-items: center;
+  margin-right: 9rem;
+  margin-left: 2.5rem;
+  font-size: 1.2rem;
+  width: 75%;
 }
 
+.list-buttons {
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(0, 1fr);
+  align-items: center;
+  box-sizing: border-box;
+}
 .checkbox {
-    /* background-color: aquamarine; */
-   height:1.5rem
+  height: 1rem;
+  width: 4rem;
+  box-sizing: border-box;
+  align-self: center;
+  margin-left: 1rem;
 }
 
 .list {
-    /* background-color: azure; */
+  /* background-color: azure; */
+  width: fit-content;
+  margin: auto;
+  grid-column-start: span 1;
+  box-sizing: border-box;
+  align-items: center;
 }
 
-.tick {
-    /* background-color: blueviolet; */
+.button-for-delete {
+  /* background-color: aqua; */
+  height: 1.3rem;
+  width: 3.3rem;
+}
+
+@media (min-width: 600px) {
+  .list-line {
+    /* background-color: rgb(119, 53, 53); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(0, 1fr);
+    align-items: center;
+    margin-right: 8rem;
+    margin-left: 5rem;
+    font-size: 1.35rem;
+    width: 75%;
+  }
+  .list-buttons {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(0, 1fr);
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .checkbox {
+    height: 1.3rem;
+    width: 4rem;
+    box-sizing: border-box;
+    margin-left: 2rem;
+  }
+
+  .list {
+    /* background-color: azure; */
+    width: fit-content;
+    margin: auto;
+    grid-column-start: span 1;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .button-for-delete {
+    /* background-color: aqua; */
+    height: 1.5rem;
+    width: 3.3rem;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 700px) {
+  .list-line {
+    /* background-color: rgb(119, 53, 53); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(0, 1fr);
+    align-items: center;
+    margin-right: 8rem;
+    margin-left: 4.5rem;
+    font-size: 1.35rem;
+    width: 75%;
+  }
+  .list-buttons {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(0, 1fr);
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .checkbox {
+    height: 1.3rem;
+    width: 4rem;
+    box-sizing: border-box;
+    margin-left: 4.5rem;
+  }
+
+  .list {
+    /* background-color: azure; */
+    width: fit-content;
+    margin: auto;
+    grid-column-start: span 1;
+    box-sizing: border-box;
+    align-items: center;
+    margin-left: 0.75;
+  }
+
+  .button-for-delete {
+    /* background-color: aqua; */
+    height: 1.5rem;
+    width: 3.3rem;
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 900px) {
+  .list-line {
+    /* background-color: rgb(208, 121, 121); */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(0, 1fr);
+    align-items: center;
+    margin-right: 8rem;
+    margin-left: 6.5rem;
+    font-size: 1.5rem;
+    width: 75%;
+    row-gap: 10rem;
+  }
+  .list-buttons {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(0, 1fr);
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .checkbox {
+    height: 1.5rem;
+    width: 4rem;
+    box-sizing: border-box;
+    align-self: center;
+  }
+
+  .list {
+    /* background-color: azure; */
+    width: fit-content;
+    margin: auto;
+    grid-column-start: span 2;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: larger;
+  }
+
+  .button-for-delete {
+    /* background-color: aqua; */
+    height: 2rem;
+    grid-column-start: span 1;
+    margin-right: 1rem;
+  }
+}
+
+/* .tick {
+    background-color: blueviolet;
     padding-left: 3rem;
     margin-bottom: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+  
 
-}
 
-.task {
-    /* background-color: blue; */
-}
+} */
+
+/* .task {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+grid-column-start: span ;
+grid-row-start: 1;
+align-items: stretch;
+
+
+    max-width: 3rem;
+    inline-size: min-content;
+    margin:auto
+
+} */
+
+/* .delete-list-button {
+    background-color: pink;
+    height:2.2rem;
+    width: 2.2rem;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: rem;
+
+} */
+
+/* .edit-button {
+    background-color: yellow;
+    height:2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+} */
+
+/* .button-for-edit {
+    background-color: bisque;
+} */

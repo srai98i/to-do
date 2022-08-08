@@ -2,11 +2,10 @@
   text-align: center;
   font-size: 2rem;
   /* background-color: aquamarine; */
- 
 }
 
 .header {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   color: rgb(58, 56, 60);
   margin-top: 2rem;
   padding-top: 4rem;
@@ -16,7 +15,6 @@
   display: flex;
   justify-content: center;
   /* background-color: blue; */
-
 }
 
 .submit-button-div {
@@ -34,7 +32,7 @@
   padding: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .submit-button {
@@ -46,7 +44,7 @@
   background-color: pink;
   color: rgb(198, 33, 179);
   border: none;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .submit-button:hover {
@@ -58,14 +56,13 @@
   /* background-color: rgb(89, 13, 25); */
   color: rgb(222, 206, 220);
   border: none;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.rendered-list {
+/* .rendered-list {
 background-color: blanchedalmond;
-}
+} */
 
 /* .list-item {
   background-color: rgb(93, 124, 114);
 } */
-
