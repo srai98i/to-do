@@ -20,6 +20,9 @@ Deployment coming soon.
 ## Functionality
 
 - User can type in a task and save it to a list
+- User can tick checkbox when specific task is completed
+- User can delete specific task from list
+- User can delete entire list 
 
 Coming Soon:
 
