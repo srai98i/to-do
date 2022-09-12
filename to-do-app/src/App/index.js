@@ -1,13 +1,13 @@
 import "./App.css";
 import Button from "../Button";
-
+import ListMapped from "../List/List";
 import Input from "../Input";
-import List from "../List";
+
 import { useState } from "react";
 
 function App() {
   const [input, setInput] = useState("");
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([{ id: "", task: "" }]);
 
   function getListItem(e) {
     const newInput = e.target.value;
@@ -16,10 +16,20 @@ function App() {
   }
 
   function addToList() {
-    setList([input, ...list]);
+    setList([...list, { id: input, task: input }]);
+    console.log(list);
   }
   function clearList() {
     setList([]);
+  }
+
+  function deleteItem(e) {
+    console.log(e.target.parentElement.id);
+    let idDelete = e.target.parentElement.id;
+    let deletedItem = list.filter((x) => {
+      return x.id !== idDelete;
+    });
+    setList(deletedItem);
   }
 
   return (
@@ -40,18 +50,35 @@ function App() {
           />
         </div>
       </div>
-      <div className="rendered-list">
-        <div className="list-item">
-          <List listItem={list} />
-        </div>
-        <Button
-          className="delete-button"
-          handleClick={clearList}
-          text="Delete All"
-        />
-      </div>
+      {list.map((task, index) => {
+        return (
+          <div key={index} className="rendered-list">
+            <ListMapped
+              listItem={task.task}
+              handleClick={deleteItem}
+              buttonId={task.id}
+            />
+          </div>
+        );
+      })}
+      <Button
+        className="delete-button"
+        handleClick={clearList}
+        text="Clear All"
+      />
     </div>
   );
 }
 
 export default App;
+
+/*
+press delete
+select specific item from array (needs to have specfic identifier)
+- make it an object
+- currently looks like: [task, task, task] and whole array is rendered
+- the end goal should look like: [{id, task},{id, task},{id, task}]
+-for each object, display the task 
+remove item from array
+display new array
+*/
