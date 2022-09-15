@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [input, setInput] = useState("");
-  const [list, setList] = useState([{ id: "", task: "" }]);
+  const [list, setList] = useState([{ id: input, task: input }]);
 
   function getListItem(e) {
     const newInput = e.target.value;
@@ -24,7 +24,7 @@ function App() {
   }
 
   function deleteItem(e) {
-    console.log(e.target.parentElement.id);
+    console.log("id", e.target.parentElement.id);
     let idDelete = e.target.parentElement.id;
     let deletedItem = list.filter((x) => {
       return x.id !== idDelete;
