@@ -5,9 +5,13 @@ import Button from "../Button";
 function ListMapped({ listItem, className, handleClick, buttonId }) {
   return (
     <ul className={className}>
-      <div className="list-line" id={buttonId}>
-        <li className="list">{listItem}</li>
-        <div className="list-buttons">
+      <div className="list-line">
+        <div>
+          {" "}
+          <li className="list">{listItem}</li>
+        </div>
+
+        <div className="list-buttons" id={buttonId}>
           {" "}
           <input className="checkbox" type="checkbox" />
           <Button
