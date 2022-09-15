@@ -6,13 +6,19 @@ function ListMapped({ listItem, className, handleClick, buttonId }) {
   return (
     <ul className={className}>
       <div className="list-line" id={buttonId}>
-        <li className="list">{listItem}</li>
-        <input className="checkbox" type="checkbox" />
-        <Button
-          className="button-for-delete"
-          text="Delete"
-          handleClick={handleClick}
-        />
+        <div>
+          {" "}
+          <li className="list">{listItem}</li>
+        </div>
+        <div className="list-buttons">
+          {" "}
+          <input className="checkbox" type="checkbox" />
+          <Button
+            className="button-for-delete"
+            text="Delete"
+            handleClick={handleClick}
+          />
+        </div>
       </div>
     </ul>
   );

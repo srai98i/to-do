@@ -71,14 +71,3 @@ function App() {
 }
 
 export default App;
-
-/*
-press delete
-select specific item from array (needs to have specfic identifier)
-- make it an object
-- currently looks like: [task, task, task] and whole array is rendered
-- the end goal should look like: [{id, task},{id, task},{id, task}]
--for each object, display the task 
-remove item from array
-display new array
-*/

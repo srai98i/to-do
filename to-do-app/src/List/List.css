@@ -36,14 +36,14 @@
 }
 
 .button-for-delete {
-  /* background-color: aqua; */
+  background-color: aqua;
   height: 1.3rem;
   width: 3.3rem;
 }
 
 @media (min-width: 600px) {
   .list-line {
-    /* background-color: rgb(119, 53, 53); */
+    background-color: rgb(119, 53, 53);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(0, 1fr);
@@ -54,7 +54,7 @@
     width: 75%;
   }
   .list-buttons {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(0, 1fr);
@@ -69,7 +69,7 @@
   }
 
   .list {
-    /* background-color: azure; */
+    background-color: azure;
     width: fit-content;
     margin: auto;
     grid-column-start: span 1;
@@ -78,7 +78,7 @@
   }
 
   .button-for-delete {
-    /* background-color: aqua; */
+    background-color: aqua;
     height: 1.5rem;
     width: 3.3rem;
     margin-left: 1rem;
@@ -132,7 +132,7 @@
   .list-line {
     /* background-color: rgb(208, 121, 121); */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(0, 1fr);
     align-items: center;
     margin-right: 8rem;
