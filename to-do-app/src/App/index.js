@@ -2,12 +2,13 @@ import "./App.css";
 import Button from "../Button";
 import ListMapped from "../List/List";
 import Input from "../Input";
+import Navbar from "../Navbar";
 
 import { useState } from "react";
 
 function App() {
   const [input, setInput] = useState("");
-  const [list, setList] = useState([{ id: "", task: "" }]);
+  const [list, setList] = useState([]);
 
   function getListItem(e) {
     const newInput = e.target.value;
@@ -24,7 +25,7 @@ function App() {
   }
 
   function deleteItem(e) {
-    console.log(e.target.parentElement.id);
+    console.log("id", e.target.parentElement.id);
     let idDelete = e.target.parentElement.id;
     let deletedItem = list.filter((x) => {
       return x.id !== idDelete;
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <div className="App-header">
         <h1 className="header"> To-Do List </h1>
       </div>
@@ -62,7 +64,7 @@ function App() {
         );
       })}
       <Button
-        className="delete-button"
+        className="clear-button"
         handleClick={clearList}
         text="Clear All"
       />
@@ -71,14 +73,3 @@ function App() {
 }
 
 export default App;
-
-/*
-press delete
-select specific item from array (needs to have specfic identifier)
-- make it an object
-- currently looks like: [task, task, task] and whole array is rendered
-- the end goal should look like: [{id, task},{id, task},{id, task}]
--for each object, display the task 
-remove item from array
-display new array
-*/

@@ -1,12 +1,12 @@
 .App {
   text-align: center;
   font-size: 2rem;
-  /* background-color: aquamarine; */
+  background-color: #f1faee;
 }
 
 .header {
   /* background-color: blueviolet; */
-  color: rgb(58, 56, 60);
+  color: #1d3557;
   margin-top: 2rem;
   padding-top: 4rem;
 }
@@ -14,11 +14,9 @@
 .submit-form {
   display: flex;
   justify-content: center;
-  /* background-color: blue; */
 }
 
 .submit-button-div {
-  /* background-color: rgb(104, 104, 175); */
   padding: 1rem;
 }
 
@@ -41,8 +39,8 @@
   padding-left: 0.9rem;
   padding-right: 0.9rem;
   font-weight: bold;
-  background-color: pink;
-  color: rgb(198, 33, 179);
+  background-color: #43aa8b;
+  color: #f1faee;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -53,14 +51,14 @@
   padding-left: 0.9rem;
   padding-right: 0.9rem;
   font-weight: bold;
-  /* background-color: rgb(89, 13, 25); */
-  color: rgb(222, 206, 220);
+  color: #f1faee;
   border: none;
+  background-color: #2e7963;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* .rendered-list {
-background-color: blanchedalmond;
+  background-color: blanchedalmond;
 } */
 
 /* .list-item {

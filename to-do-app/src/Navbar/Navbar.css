@@ -1,0 +1,9 @@
+.nav {
+  background-color: #1d3557;
+  display: block;
+  width: 100%;
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+}

@@ -18,6 +18,7 @@
   align-items: center;
   box-sizing: border-box;
 }
+
 .checkbox {
   height: 1rem;
   width: 4rem;
@@ -36,9 +37,57 @@
 }
 
 .button-for-delete {
-  /* background-color: aqua; */
-  height: 1.3rem;
+  border-radius: 0.75rem;
+  padding: 0.3rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  height: 1.6rem;
   width: 3.3rem;
+  font-weight: bold;
+  background-color: #457b9d;
+  color: #f1faee;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-for-delete:hover {
+  border-radius: 1rem;
+  padding: 0.3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  font-weight: bold;
+  background-color: #dc1313;
+  height: 1.6rem;
+  width: 3.3rem;
+  color: #f1faee;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.clear-button {
+  border-radius: 1rem;
+  padding: 0.3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  font-weight: bold;
+  background-color: #dc1313;
+  height: 1.6rem;
+  width: 5rem;
+  color: #f1faee;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.clear-button:hover {
+  border-radius: 1rem;
+  padding: 0.3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  font-weight: bold;
+  background-color: #ee6d6d;
+  height: 1.6rem;
+  width: 5rem;
+  color: #f1faee;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (min-width: 600px) {
@@ -78,10 +127,30 @@
   }
 
   .button-for-delete {
-    /* background-color: aqua; */
-    height: 1.5rem;
+    border-radius: 0.75rem;
+    padding: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    font-weight: bold;
+    background-color: #457b9d;
+    height: 1.6rem;
     width: 3.3rem;
-    margin-left: 1rem;
+    color: #f1faee;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+  .button-for-delete:hover {
+    border-radius: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    font-weight: bold;
+    background-color: #dc1313;
+    height: 1.6rem;
+    width: 3.3rem;
+    color: #f1faee;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   }
 }
 @media (min-width: 700px) {
@@ -122,17 +191,39 @@
   }
 
   .button-for-delete {
-    /* background-color: aqua; */
-    height: 1.5rem;
+    border-radius: 0.75rem;
+    padding: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    height: 1.6rem;
     width: 3.3rem;
-    margin-left: 3rem;
+    font-weight: bold;
+    background-color: #457b9d;
+    color: #f1faee;
+    height: 1.6rem;
+    width: 3.3rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+  .button-for-delete:hover {
+    border-radius: 0.75rem;
+    padding: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    font-weight: bold;
+    background-color: #dc1313;
+    color: #f1faee;
+    height: 1.6rem;
+    width: 3.3rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   }
 }
 @media (min-width: 900px) {
   .list-line {
     /* background-color: rgb(208, 121, 121); */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(0, 1fr);
     align-items: center;
     margin-right: 8rem;
@@ -167,10 +258,30 @@
   }
 
   .button-for-delete {
-    /* background-color: aqua; */
-    height: 2rem;
-    grid-column-start: span 1;
-    margin-right: 1rem;
+    border-radius: 0.75rem;
+    padding: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    font-weight: bold;
+    background-color: #457b9d;
+    height: 1.6rem;
+    width: 3.3rem;
+    color: #f1faee;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+  .button-for-delete:hover {
+    border-radius: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    font-weight: bold;
+    background-color: #dc1313;
+    height: 1.6rem;
+    width: 3.3rem;
+    color: #f1faee;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
