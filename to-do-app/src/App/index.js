@@ -2,12 +2,13 @@ import "./App.css";
 import Button from "../Button";
 import ListMapped from "../List/List";
 import Input from "../Input";
+import Navbar from "../Navbar";
 
 import { useState } from "react";
 
 function App() {
   const [input, setInput] = useState("");
-  const [list, setList] = useState([{ id: input, task: input }]);
+  const [list, setList] = useState([]);
 
   function getListItem(e) {
     const newInput = e.target.value;
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <div className="App-header">
         <h1 className="header"> To-Do List </h1>
       </div>
@@ -62,7 +64,7 @@ function App() {
         );
       })}
       <Button
-        className="delete-button"
+        className="clear-button"
         handleClick={clearList}
         text="Clear All"
       />
