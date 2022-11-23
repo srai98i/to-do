@@ -14,7 +14,7 @@ Install with npm
 ```
 ## Deployment
 
-Deployment coming soon. 
+https://reactodo-sim.netlify.app/
 
 
 ## Functionality
