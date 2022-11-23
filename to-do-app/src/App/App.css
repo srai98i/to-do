@@ -61,6 +61,8 @@
   background-color: blanchedalmond;
 } */
 
-/* .list-item {
-  background-color: rgb(93, 124, 114);
-} */
+.list {
+  /* background-color: green; */
+
+  max-width: 75%;
+}

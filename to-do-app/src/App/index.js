@@ -52,17 +52,19 @@ function App() {
           />
         </div>
       </div>
-      {list.map((task, index) => {
-        return (
-          <div key={index} className="rendered-list">
-            <ListMapped
-              listItem={task.task}
-              handleClick={deleteItem}
-              buttonId={task.id}
-            />
-          </div>
-        );
-      })}
+      <div className="list">
+        {list.map((task, index) => {
+          return (
+            <div key={index} className="rendered-list">
+              <ListMapped
+                listItem={task.task}
+                handleClick={deleteItem}
+                buttonId={task.id}
+              />
+            </div>
+          );
+        })}
+      </div>
       <Button
         className="clear-button"
         handleClick={clearList}
